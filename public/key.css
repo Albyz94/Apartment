@@ -1,0 +1,65 @@
+.img1 {
+    animation-name: image;
+    position: absolute;
+    z-index: -1;
+    margin-left: 90%;
+    height: 10%;
+    width: 4%;
+    opacity: 0%;
+    animation-duration: 6s;
+    animation-timing-function: ease-in-out;
+    transform: rotateZ(-90deg);
+
+    animation-delay: 12s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes image {
+    0% {
+        opacity: 0%;
+    }
+    20% {
+        opacity: 100%
+    }
+    80% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 0%;
+    }
+}
+
+.img2 {
+    animation-name: image;
+    position: absolute;
+    z-index: -1;
+    margin-top:-.5%;
+    margin-left: 85.5%;
+    height: 10%;
+    width: 4%;
+    opacity: 0%;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    transform: rotateZ(0deg);
+   
+    animation-delay: 14s;
+    animation-iteration-count: infinite;
+}
+
+.img4 {
+    animation-name: image;
+    position: absolute;
+    z-index: -1;
+    margin-top: -1%;
+    margin-left: 81%;
+    height: 10%;
+    width: 4%;
+    opacity: 0%;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    transform: rotateZ(-90deg);
+    
+    animation-delay: 16s;
+    animation-iteration-count: infinite;
+    
+}

@@ -1,0 +1,226 @@
+:root {
+    --main-font:'Inria Sans', sans-serif ;
+    --main-color-font: rgb(0, 0, 0, 0.5);
+    --sec-font:"Cormorant", serif;
+}
+
+
+
+.section-menu {
+    display: flex;
+    justify-content: center;
+}
+
+.menu-cont li{
+    font-family: var(--main-font);
+    color: var(--main-color-font);
+    display: inline;
+    margin-left: 5%;
+}
+
+.menu-voice {
+    cursor: pointer;
+}
+
+.menu-cont {
+    display: inline;
+    width: 40%;
+    padding-top: 11%;
+    padding-bottom: 5%;
+    /* margin-left: 5%; */
+    /* padding-top: 8%;
+    padding-bottom: 8%; */
+}
+
+.cont {
+    display: flex;
+    justify-content: center;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 100,
+    'GRAD' 200,
+    'opsz' 48;
+    align-content: center;
+    cursor: pointer;
+}
+
+.menu-container {
+    position: relative;
+    display: flex;
+    background-color: rgba(241, 241, 241, 0.664);
+    width: 60%;
+    height:20px;
+    align-items: center;  
+    justify-content: center;
+    margin-top: -5%;
+    transition: 1s ease-in-out;
+}
+
+.menu-container.hidden{
+    transition: 1s ease-in-out;
+    /* transform: translateY(-100%); */
+    height: 0;
+}
+
+.hidden {
+    visibility: hidden;
+}
+  
+  .menu-voices {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10%;
+    align-content: center;
+    width: 60%;
+    
+  }
+  .menu-voices li{
+    display: inline;
+    font-family: var(--main-font);
+    color: var(--main-color-font);
+  }
+
+  .down-menu-cont {
+    display: flex;
+    justify-content: center;
+    transition: height ease-in-out 2s;
+  }
+
+  .shape-1 {
+    height: 60px;
+    width: 60px;
+    border-radius: 41% 59% 56% 44% / 40% 21% 79% 60% ;
+    transform: rotateZ(-67deg);
+    background-color: black;
+    position: absolute;
+    margin-top: 7%;
+    margin-left:70%
+  }
+  .shape-2 {
+    height: 80px;
+    width: 80px;
+    border-radius: 41% 59% 67% 33% / 40% 21% 79% 60% ;
+    transform: rotateZ(-10deg);
+    background-color: black;
+    position: absolute;
+    margin-top: 12%;
+    margin-left:75%
+  }
+
+  .rectangle-left {
+    width: 300px;
+    height: 440px;
+    background-color: rgb(172, 172, 172);
+    /* position: absolute; */
+    margin-left: -1%;
+  }
+
+  .section2 {
+    margin-top: 10px;
+    height: auto;
+    /* display: grid;
+    grid-template-columns: 10% 30% 60%; */
+    display: flex;
+    flex-basis: 0 ;
+    gap: 10px;
+  }
+
+.img3 {
+    height: 25%;
+    width: 25%;
+}
+
+.main-title {
+    font-size: 120px;
+    padding-left: 20px;
+    margin-top: -5%;
+    font-family: var(--sec-font);
+    font-weight:500;
+}
+
+.line1 {
+    position: absolute;
+    z-index: -1;
+    height: 650px;
+    width: 430px;
+    margin-left: 30%;
+    margin-top: -4%;
+}
+
+.main-par {
+    display: grid;
+    width: 30%;
+    margin-left: 6%;
+    position: absolute;
+    font-family: var(--main-font);
+    color: var(--main-color-font);
+    font-size: 16px;
+    text-align: justify;
+}
+
+.lang {
+  position: absolute;
+  border: none;
+  background: linear-gradient(to right,  rgb(12, 139, 12), rgb(255, 255, 255), rgb(247, 0, 0));
+  cursor: pointer;
+  width: 150px;
+  height: 30px;
+  border-radius: 15px;
+}
+
+.eng {
+  background: linear-gradient(to right, rgb(0, 0, 255), rgb(255, 255, 255) , rgb(247, 0, 0) );
+}
+
+.container-carosel {
+  display: grid;
+  grid-template-columns: 3fr 1fr 5fr 1fr 3fr;
+  justify-items: center;
+}
+
+.arrow {
+  align-self: center;
+}
+
+.show-image {
+  height: 500px;
+  width: 1000px;
+  object-fit: cover;
+  object-position: 80% 80%;
+  transition: opacity 0.4s ease;
+  /* opacity: 0.8; */
+  
+}
+
+.img-cont {
+  transition: transform 0.5s ease;
+}
+
+.slide-right {
+  transform: translateX(50px);
+}
+
+.fade-out {
+  opacity: 0;
+}
+
+.sli-arrow {
+  font-size: 50px !important;
+  opacity: 0.3;
+  user-select: none;
+}
+
+.container-carosel {
+  padding-bottom: 5%;
+}
+
+.line2 {
+  position: absolute;
+  z-index: -1;
+  width: 80vw;
+  margin-right: 18%;
+}
