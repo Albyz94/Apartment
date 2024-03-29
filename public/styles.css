@@ -18,10 +18,6 @@
     margin-left: 5%;
 }
 
-.menu-voice {
-    cursor: pointer;
-}
-
 .menu-cont {
     display: inline;
     width: 40%;
@@ -198,6 +194,7 @@
 
 .img-cont {
   transition: transform 0.5s ease;
+
 }
 
 .slide-right {
@@ -223,4 +220,28 @@
   z-index: -1;
   width: 80vw;
   margin-right: 18%;
+}
+
+.player {
+  display: grid;
+  justify-content: center;
+}
+
+.play-stop {
+  user-select: none;
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 200,
+  'GRAD' 2,
+  'opsz' 24 ;
+  color: var(--main-color-font);
+}
+
+.menu-voice {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  font-family: var(--main-font);
+  color: var(--main-color-font);
+  font-size: 18px ;
 }

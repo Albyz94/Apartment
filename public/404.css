@@ -1,0 +1,12 @@
+@import url("./styles.css");
+
+.errContainer {
+    display: grid;
+    font-family: var(--main-font);
+    font-size: 35px;
+    color: var(--main-color-font);
+    flex-direction: column;
+    grid-template-columns: 1fr 3fr 1fr;
+    text-align: center;
+    margin-top: 5%;
+}

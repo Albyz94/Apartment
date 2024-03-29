@@ -1,31 +1,31 @@
 <%- include("headers.ejs") %>
+<form id="apart" action="/apartments" method="get"></form>
+<form id="home" action="/" method="get"></form>
+<form id="contact" action="/contact" method="get"></form>
+<form id="discover" action="/discover" method="get"></form>
+
 <section class="section-menu">
     <img class="line2" src="/images/line2.svg" alt="">
     <!-- <button class="lang">Italiano</button> -->
     <div class="shape-1"></div>
     <div class="shape-2"></div>
     <ul class="menu-cont cont">
-        <li class="menu-voice home">Home</li>
+        <li class="menu-voice home"><input form="home" type="submit" value="Home" class="menu-voice apart"></li>
         <li>|</li>
-        <li class="menu-voice apart">Apartments</li>
+        <li form="pages" class="menu-voice apart"> <input form="apart" type="submit" value="Apartments" class="menu-voice apart"></li>
         <li>|</li>
-        <li class="menu-voice contact">Contact Us</li>
+        <li class="menu-voice contact"><input form="contact" type="submit" value="Contact Us" class="menu-voice apart"></li>
         <li>|</li>
-        <li class="menu-voice discover">Discover Durrës</li>
+        <li class="menu-voice discover"><input form="discover" type="submit" value="Discover Durrës" class="menu-voice apart"></li>
         <li><span class="material-symbols-outlined toggle-menu">
             menu
         </span></li>   
     </ul>
-    
     
 </section>
 <div class="down-menu-cont">
     <%- include("menu.ejs") %>
 
 </div>
-<%- include("section3.ejs")  %>
 
-<%- include("section2.ejs") %>
-
-<%- include("footer.ejs") %>
 

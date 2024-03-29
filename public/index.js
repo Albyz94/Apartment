@@ -5,32 +5,66 @@ const rightArr = document.querySelectorAll(".right-arrow");
 const leftArr = document.querySelectorAll(".left-arrow");
 let imgCont = document.querySelectorAll(".img-cont");
 let image = document.querySelectorAll(".show-image");
+let psBtn = document.querySelectorAll(".play-stop");
+let playing = true;
+
 
 function appear() {
-                
+    
     imgCont[0].classList.remove("slide-right");
     image[0].classList.remove("fade-out");
     // image[0].classList.add("fade-in");
 }
 
+//CAROSEL SLIDES AUTOMATICALLY
+let i = 1;
+function autoSlide(maxNum, interval, distance) {        
+            
+            setInterval(()=> {
+                // imgCont[0].classList.add("slide-right");
+                if (!playing) {
+                    return;
+                } else {
+                    image[0].classList.add("fade-out");
+                    if (i < maxNum) {
+                                i+=1;
+                            } else {
+                                i = 1;
+                            }
+                            setTimeout(()=> {
+                                appear();
+                                
+                            }, interval);
+                            setTimeout(()=> {
+                                image[0].setAttribute("src" , "/images/carosel/img"+ i +".jpg");
+            
+                            },interval-100);
+                           
+                            console.log("cycle end")
+                        }
+                    }, distance);
+}
+                    
 
+//MANAGES CAROSEL MANUAL SLIDING
 function slider(rArr, lArr, maxImg, minImg, imgContainer, mainImage, idx) {
+
     rArr.forEach(arrowR => {
         // let maxImage = maxImg;
         // let minImage = minImg;
-        let index = idx;
+        let i = idx;
         arrowR.addEventListener("click" , ()=> {
             imgContainer[0].classList.add("slide-right");
             mainImage[0].classList.add("fade-out");
             // image[0].classList.remove("fade-out");
 
             setTimeout (()=> {
-                if(index < maxImg) {
-                    index += 1;
+                if(i < maxImg) {
+                    i += 1;
                 } else {
-                    index = minImg;
+                    i = minImg;
                 }
-                mainImage[0].setAttribute("src" , "/images/carosel/img"+ index +".jpg");
+                mainImage[0].setAttribute("src" , "/images/carosel/img"+ i +".jpg");
                 
             }, 500);
             setTimeout( appear , 700);
@@ -44,23 +78,29 @@ function slider(rArr, lArr, maxImg, minImg, imgContainer, mainImage, idx) {
             imgContainer[0].classList.add("slide-right");
             mainImage[0].classList.add("fade-out");
             setTimeout (()=> {
-                if(index > minImg) {
-                    index -= 1;
+                if(i > minImg) {
+                    i -= 1;
                 } else {
-                    index = maxImg;
+                    i = maxImg;
                 }
-                mainImage[0].setAttribute("src" , "/images/carosel/img"+ index +".jpg");
+                mainImage[0].setAttribute("src" , "/images/carosel/img"+ i +".jpg");
             }, 500);
             setTimeout( appear , 700);
-            })
         })
-
     })
+    
+})
 }
 
+
+
 document.addEventListener("DOMContentLoaded" , function() {
-    console.log(image);
+       autoSlide(33, 500, 4000);
+
     
+    
+    console.log(image);
+  
     menuOpen.forEach(button=> {
 
             let toggle = false;
@@ -83,6 +123,21 @@ document.addEventListener("DOMContentLoaded" , function() {
             });            
     });
 
+    psBtn.forEach(button => {
+        let toggle = false;
+        button.addEventListener("click" , ()=> {
+            if (!toggle) {
+                button.innerText = "play_arrow";
+                toggle = true;
+                playing = false;
+            } else {
+                button.innerText = "stop";
+                toggle = false;
+                playing = true;
+            }
+        });
+    });
+   
     slider(rightArr, leftArr, 32 , 1, imgCont, image, 1);
     
 });
