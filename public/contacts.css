@@ -1,0 +1,17 @@
+@import url("./styles.css");
+
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
+    height: 300px;
+    align-items: center;
+    text-align: center;
+    background-color: var(--sec-color-font);
+    margin-top: 2%;
+    font-family: var(--main-font);
+    color: var(--main-color-font);
+}
+
+.contact-container ul {
+    list-style-type: none;
+}
