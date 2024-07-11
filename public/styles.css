@@ -4,6 +4,9 @@
     --sec-font:"Cormorant", serif;
     --sec-color-font: rgba(241, 241, 241, 0.664);
     --color-obj: rgb(172, 172, 172);
+    --blue: rgb(99, 137, 196);
+    --pistacchio: rgb(166, 194, 147);
+    --honey: rgb(247, 210, 175);
 }
 
 
@@ -246,4 +249,12 @@
   font-family: var(--main-font);
   color: var(--main-color-font);
   font-size: 18px ;
+}
+
+#Livello_1 {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  padding-left: 10%;
+  padding-top: 5%;
 }

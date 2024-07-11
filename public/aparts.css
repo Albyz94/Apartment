@@ -1,0 +1,38 @@
+.blue-circle, .honey-circle, .pistacchio-circle {
+    width: 250px;
+    height: 100px;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 2%;
+    border-bottom-left-radius: 2%;
+    border-bottom-right-radius: 100%;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--main-font);
+    font-size: 20px;
+    color: white;
+}
+
+.blue-circle{
+    background-color: var(--blue);
+    display: flex;
+    justify-self: flex-end;
+}
+
+.honey-circle {
+    background-color: var(--honey);
+    display: flex;
+    justify-self: flex-start;
+}
+
+.pistacchio-circle {
+    background-color: var(--pistacchio);
+    display: flex;
+    justify-self: flex-end;
+}
+
+.circle-container {
+    display: grid;
+    padding-left: 5%;
+    padding-right: 5%;
+
+}
