@@ -1,38 +1,69 @@
-.blue-circle, .honey-circle, .pistacchio-circle {
-    width: 250px;
-    height: 100px;
-    border-top-left-radius: 100%;
-    border-top-right-radius: 2%;
-    border-bottom-left-radius: 2%;
-    border-bottom-right-radius: 100%;
-    justify-content: center;
-    align-items: center;
-    font-family: var(--main-font);
-    font-size: 20px;
-    color: white;
-}
-
-.blue-circle{
-    background-color: var(--blue);
-    display: flex;
-    justify-self: flex-end;
-}
-
-.honey-circle {
-    background-color: var(--honey);
-    display: flex;
-    justify-self: flex-start;
-}
-
-.pistacchio-circle {
-    background-color: var(--pistacchio);
-    display: flex;
-    justify-self: flex-end;
-}
-
-.circle-container {
+.list-container {
     display: grid;
-    padding-left: 5%;
-    padding-right: 5%;
+    grid-template-columns: 2fr 5fr 2fr;
+    text-align: center;
+    font-family: var(--main-font);
+    font-size: 42px;
+}
 
+.foto-container {
+    margin-bottom: 5%;
+}
+
+.foto-grid img {
+    max-width: 100%;
+    height: auto;
+}
+
+.foto-grid img:hover {
+   cursor: pointer;
+}
+
+.foto-grid img:first-child{
+    grid-area: a;
+}
+
+.foto-grid img::nth-child(2){
+    grid-area: b;
+}
+
+.foto-grid img:nth-child(3){
+    grid-area: c;
+}
+
+.foto-grid img::nth-child(4){
+    grid-area: d;
+}
+
+.foto-grid img:nth-child(5){
+    grid-area: e;
+}
+.foto-grid img::nth-child(6){
+    grid-area: f;
+}
+
+.foto-grid {
+    display: grid;
+    grid-template-areas: 
+    "a a b"
+    "a a c"
+    "d e f";
+
+    gap: 5px;
+}
+
+.foto-container div:first-child {
+    margin-bottom: 2%;
+}
+
+.title-pistacchio {
+    color: rgb(26, 73, 26); 
+}
+
+.title-honey {
+    color: rgb(104, 86, 8);
+}
+
+.title-blue{
+    color: rgb(23, 38, 77);
 }

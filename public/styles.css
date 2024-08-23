@@ -10,7 +10,6 @@
 }
 
 
-
 .section-menu {
     display: flex;
     justify-content: center;
@@ -21,9 +20,11 @@
     color: var(--main-color-font);
     display: inline;
     margin-left: 5%;
-}
-
-.menu-cont {
+    background-color: rgba(255, 255, 255, 0.89);
+    z-index: 2;
+  }
+  
+  .menu-cont {
     display: inline;
     width: 40%;
     padding-top: 11%;
@@ -31,6 +32,7 @@
     /* margin-left: 5%; */
     /* padding-top: 8%;
     padding-bottom: 8%; */
+
 }
 
 .cont {
@@ -99,7 +101,7 @@
     background-color: black;
     position: absolute;
     margin-top: 7%;
-    margin-left:70%
+    margin-left:70%;
   }
   .shape-2 {
     height: 80px;
@@ -109,7 +111,7 @@
     background-color: black;
     position: absolute;
     margin-top: 12%;
-    margin-left:75%
+    margin-left:75%;
   }
 
   .rectangle-left {

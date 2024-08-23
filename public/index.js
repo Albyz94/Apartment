@@ -7,7 +7,11 @@ let imgCont = document.querySelectorAll(".img-cont");
 let image = document.querySelectorAll(".show-image");
 let psBtn = document.querySelectorAll(".play-stop");
 let playing = true;
-
+let pistacchio = document.querySelectorAll(".pistacchio");
+let blueSensation = document.querySelectorAll(".blue-sensation");
+let honey = document.querySelectorAll(".honey");
+let background = document.querySelectorAll(".list-container");
+let foto = document.querySelectorAll(".foto-grid img");
 
 function appear() {
     
@@ -142,6 +146,54 @@ document.addEventListener("DOMContentLoaded" , function() {
     
 });
 
+document.addEventListener("DOMContentLoaded" , function(){
+
+    pistacchio.forEach(element => {
+        element.addEventListener("mouseover" , ()=> {
+            background.forEach(backgrd => {
+                 backgrd.style.backgroundColor = "var(--pistacchio)";
+                 backgrd.style.transition = "background-color 0.5s ease";
+            })
+        })
+        element.addEventListener("mouseout" , ()=> {
+            background.forEach(backgrd => {
+                 backgrd.style.backgroundColor = "white";
+            });
+        });
+    });
+
+    blueSensation.forEach(element => {
+        element.addEventListener("mouseover" , ()=> {
+            background.forEach(backgrd => {
+                 backgrd.style.backgroundColor = "var(--blue)";
+                 backgrd.style.transition = "background-color 0.5s ease";
+            })
+        })
+        element.addEventListener("mouseout" , ()=> {
+            background.forEach(backgrd => {
+                 backgrd.style.backgroundColor = "white";
+            });
+        });
+    });
+
+    honey.forEach(element => {
+        element.addEventListener("mouseover" , ()=> {
+            background.forEach(backgrd => {
+                 backgrd.style.backgroundColor = "var(--honey)";
+                 backgrd.style.transition = "background-color 0.5s ease";
+            })
+        })
+        element.addEventListener("mouseout" , ()=> {
+            background.forEach(backgrd => {
+                 backgrd.style.backgroundColor = "white";
+            });
+        });
+    });
+        // document.querySelectorAll(".list-container").style.backgroundColor = "var(--pistacchio)"
+
+    
+});
+
 
 //AGGIUNTA CAMBIO LINGUA DA FARE IN SEGUITO
 // langIta.forEach(button=> {
@@ -220,6 +272,7 @@ document.addEventListener("DOMContentLoaded" , function() {
     //     })
    
     
+//BACKGROUND DIVENTA DEL COLORE DEL CONTAINER IN CUI SI PASSA
 
 
 
