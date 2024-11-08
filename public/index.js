@@ -76,6 +76,7 @@ function slider(rArr, lArr, maxImg, minImg, imgContainer, mainImage, idx) {
             //     image.setAttribute("src" , "/images/carosel/img"+index+".jpg" );
             // });
 
+
         });
         lArr.forEach(arrowL => {
             arrowL.addEventListener("click" , ()=> {

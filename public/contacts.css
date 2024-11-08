@@ -15,3 +15,12 @@
 .contact-container ul {
     list-style-type: none;
 }
+
+.position{
+    color: var(--blue);
+  }
+  
+  .position:hover {
+    text-decoration: underline;
+    color: darkblue;
+  }

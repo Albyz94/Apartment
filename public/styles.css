@@ -9,6 +9,16 @@
     --honey: rgb(247, 210, 175);
 }
 
+html {
+  scroll-behavior:smooth;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
 
 .section-menu {
     display: flex;
@@ -201,6 +211,7 @@
 
 .img-cont {
   transition: transform 0.5s ease;
+  box-shadow: 1px 1px 30px grey;
 
 }
 
