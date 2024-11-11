@@ -2,12 +2,12 @@
 
 .contact-container {
     display: grid;
-    grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
+    grid-template-columns: 1fr 2fr 2fr 2fr 3fr;
     height: 300px;
     align-items: center;
     text-align: center;
     background-color: var(--sec-color-font);
-    margin-top: 2%;
+    margin-top: 10%;
     font-family: var(--main-font);
     color: var(--main-color-font);
 }
@@ -23,4 +23,30 @@
   .position:hover {
     text-decoration: underline;
     color: darkblue;
+  }
+
+  .mail-form {
+    margin-top: 30%;
+    display: grid;
+    grid-template-rows: auto;
+    justify-content: center;
+    align-items:self-start;
+  }
+  
+  .mail-form input {
+    font-family: var(--main-font);
+  }
+
+  .send-mail {
+    width: 100px;
+    margin-top:5%;
+    cursor: pointer;
+  }
+  
+  .email-text {
+    max-width: 400px;
+    min-width: 400px;
+    max-height: 300px;
+    min-height: 100px;
+    font-family: var(--main-font);
   }

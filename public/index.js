@@ -195,7 +195,6 @@ document.addEventListener("DOMContentLoaded" , function(){
     
 });
 
-
 //AGGIUNTA CAMBIO LINGUA DA FARE IN SEGUITO
 // langIta.forEach(button=> {
 //     let eng = true;

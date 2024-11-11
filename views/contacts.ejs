@@ -18,7 +18,17 @@
             <li>Cell. 0987654321</li>
         </ul>
     </div>
-    <div></div>
+    <div>
+        <form class="mail-form" action="/sendmail" method="post">
+            <label for="fromMail">Email</label>
+            <input name="fromMail" type="email">
+            <label for="subject">Subject</label>
+            <input name="subject" type="text">
+            <label for="emailText">Email Text</label>
+            <textarea class="email-text" name="emailText" id="" placeholder="Write here your email text ..."></textarea>
+            <input class="send-mail" type="submit" value="Send email">
+        </form>
+    </div>
 </section>
 
 <!-- 
